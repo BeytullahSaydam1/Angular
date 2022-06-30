@@ -1,0 +1,10 @@
+
+  <!-- <div *ngIf="item.id==1">first Element </div> {{item.name}} -->
+  <div class="col-md-3 mx-auto" ><input class="form-control mt-2 mb-2" type="text" [(ngModel)]="searchText"  (input)="Search()" placeholder="Search" />
+  </div>
+  <div style="display: flex;">
+  <app-custom-table [data]="userListSearch" [columns]="userColumns"  (buttonFunction)="DeleteUser($event)" (buttonFunction)="UptadeUser($event)">
+
+  </app-custom-table>
+
+</div>
