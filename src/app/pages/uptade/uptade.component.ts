@@ -34,7 +34,6 @@ export class UptadeComponent implements OnInit {
     this.userServices.getSelectedUser(id).subscribe(value => {
       this.user = value;
       this.load = false;
-
     });
 }
   ngOnInit(): void {

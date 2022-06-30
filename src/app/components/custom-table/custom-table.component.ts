@@ -29,7 +29,6 @@ export class CustomTableComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.columns)
-
   }
 
   buttonEvent(item: any) {
